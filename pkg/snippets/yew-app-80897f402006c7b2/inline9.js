@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_d7b667a95d1bfa77200e8c02330090fa02ca5047(Module, $0, $1, $2) { $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);let{React,ReactDOM,Uploadvideo}=Yew;let element=React.createElement(Uploadvideo,{ref:r=>r&&($0)(r),onSure:v=>v&&($1)(v),});ReactDOM.render(element,($2)); }

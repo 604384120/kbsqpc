@@ -1,0 +1,21 @@
+{
+  "name": "yew-app",
+  "collaborators": [
+    "yew-app"
+  ],
+  "description": "Yew app.",
+  "version": "0.14.3",
+  "license": "Apache-2.0/MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://git@github.com:yewstack/yew.git"
+  },
+  "files": [
+    "yew_app_bg.wasm",
+    "yew_app.js",
+    "yew_app.d.ts"
+  ],
+  "module": "yew_app.js",
+  "types": "yew_app.d.ts",
+  "sideEffects": "false"
+}

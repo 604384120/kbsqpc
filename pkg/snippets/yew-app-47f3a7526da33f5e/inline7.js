@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_2af2846df8b95ace89584f764f247d1e3a5c1bb6(Module, $0, $1, $2) { $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);let This=($0);if(typeof This.setloading !=="undefined"){This.setloading(($1),($2));} }

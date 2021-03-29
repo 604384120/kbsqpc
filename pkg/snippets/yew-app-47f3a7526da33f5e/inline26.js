@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_2db042882fa6551255d2e0ef8c7025f1ea9f8193(Module) { setTimeout(()=>{let $=Yew.Jq;$(".chat_detail_list").scrollTop($(".chat_detail_list")[0].scrollHeight+500);},500) }

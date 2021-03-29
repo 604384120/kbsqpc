@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_e39ce8114df08bdccd725b101bce57ba269d9101(Module) { Yew.Antd.Message.loading("请稍等...",1) }

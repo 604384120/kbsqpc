@@ -1,0 +1,9 @@
+build/
+node_modules/
+src/setupProxy.js
+target/
+.vscode/
+src/pages/other/interface.js
+src/pages/other/itf_out/
+public/itf_json/
+.history/

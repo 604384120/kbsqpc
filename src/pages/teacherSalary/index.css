@@ -1,0 +1,25 @@
+
+.boxTitle {
+  display: flex;
+  justify-content: space-between;
+  height: 32px;
+  line-height: 32px;
+}
+
+.boxBanner {
+  height: 98px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.bannerItem {
+  height: 70px;
+  font-size: 20px;
+  color: #333333;
+  font-weight: 500;
+  border-left: 1px solid #E8E8E8;
+}
+
+.boxBanner .bannerItem:first-child {
+  border: none
+}

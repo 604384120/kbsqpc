@@ -1,0 +1,52 @@
+diff a/src/common/comlibs/tablePagination.js b/src/common/comlibs/tablePagination.js	(rejected hunks)
+@@ -146,6 +146,19 @@
+ 		this.sureType = "selectRow";
+ 		this.setState({ selectedRowKeys,selectKey:record });
+ 	}
++	selectRowAll(list=[]){
++		let {keyName}=this.props
++		let keys=list.filter(l=>l.is_end!=='YES').map(l=>l[keyName||'uuid'])
++		this.sureType = "selectRow";
++		this.setState({ selectedRowKeys:keys });
++	}
++	selectRowPage(){
++		let {list}=this.state
++		let {keyName}=this.props
++		let keys=list.filter(l=>l.is_end!=='YES').map(l=>l[keyName||'uuid'])
++		this.sureType = "selectRow";
++		this.setState({ selectedRowKeys:keys});
++	}
+ 
+ 	delSelection(key) {
+ 		const selectedRowKeys = [...this.state.selectedRowKeys];
+@@ -166,6 +179,7 @@
+ 			className,
+ 			columns: _columns,
+ 			rowSelection,
++			getCheckboxProps,
+ 			rowType = "checkbox",
+ 			onSelection,
+ 			expandedRowRender,
+@@ -231,7 +245,11 @@
+ 				onRow={
+ 					onRow === true
+ 						? record => ({
+-								onClick: () => this.selectRow(record)
++								style:{'cursor':'pointer'},
++								onClick: () => {
++									if(record.is_end==='YES')return
++									this.selectRow(record)
++								}
+ 						  })
+ 						: onRow
+ 				}
+@@ -246,7 +264,8 @@
+ 							this.setState({
+ 								selectedRowKeys
+ 							})
+-						}
++						},
++						getCheckboxProps
+ 					}
+ 				}				  
+ 				onChange={this.onChange}

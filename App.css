@@ -1,0 +1,555 @@
+@import "~antd/dist/antd.css";
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB",
+		"Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol";
+}
+s {
+	display: inline;
+	text-decoration: none;
+}
+.link {
+	color: #1890ff;
+	cursor: pointer;
+}
+.link:hover {
+	color: #17adf6;
+	text-decoration: underline;
+}
+.hide {
+	display: none;
+}
+
+/*弹性布局*/
+.box,
+.box-w1 {
+	position: relative;
+	display: -webkit-box;
+}
+.box-wrap {
+	position: absolute;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+	display: -webkit-box;
+	margin: auto;
+	-webkit-box-orient: vertical;
+}
+.box-ver {
+	/* autoprefixer: ignore next */
+	-webkit-box-orient: vertical;
+}
+.box-rev {
+	-webkit-box-direction: reverse;
+}
+.box-con {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+.box-as {
+	-webkit-box-pack: start;
+}
+.box-ac {
+	-webkit-box-align: center;
+}
+.box-ae {
+	-webkit-box-align: end;
+}
+.box-ps {
+	-webkit-box-pack: start;
+}
+.box-pc {
+	-webkit-box-pack: center;
+}
+.box-pe {
+	-webkit-box-pack: end;
+}
+.box-allc {
+	-webkit-box-align: center;
+	-webkit-box-pack: center;
+}
+.box-pj {
+	-webkit-box-pack: justify;
+}
+.box-1 {
+	position: relative;
+	-webkit-box-flex: 1;
+}
+.box-2 {
+	position: relative;
+	-webkit-box-flex: 2;
+}
+.box-3 {
+	position: relative;
+	-webkit-box-flex: 3;
+}
+.box-4 {
+	position: relative;
+	-webkit-box-flex: 4;
+}
+
+/*常用复类*/
+.w_full {
+	width: 100%;
+}
+.ta_c {
+	text-align: center;
+}
+.ta_r {
+	text-align: right;
+}
+.tb_c {
+	display: table !important;
+	margin: auto;
+}
+.fl_r {
+	float: right;
+}
+.pt_15 {
+	padding-top: 15px;
+}
+.pl_10 {
+	padding-left: 10px;
+}
+.pl_15 {
+	padding-left: 15px;
+}
+.pl_25 {
+	padding-left: 25px;
+}
+.pr_10 {
+	padding-right: 10px;
+}
+.pv_10 {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.pv_15 {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.pv_20 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+.ph_10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.ph_15 {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.ph_20 {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+.pr_15 {
+	padding-right: 15px;
+}
+.mt_10 {
+	margin-top: 10px;
+}
+.mt_15 {
+	margin-top: 15px;
+}
+.mt_20 {
+	margin-top: 20px;
+}
+.mt_30 {
+	margin-top: 30px;
+}
+.ml_10 {
+	margin-left: 10px;
+}
+.ml_15 {
+	margin-left: 15px;
+}
+.ml_20 {
+	margin-left: 20px;
+}
+.mr_10 {
+	margin-right: 10px;
+}
+.mr_15 {
+	margin-right: 15px;
+}
+.mr_35 {
+	margin-right: 35px;
+}
+.mb_10 {
+	margin-bottom: 10px;
+}
+.mb_15 {
+	margin-bottom: 15px;
+}
+.mb_20 {
+	margin-bottom: 20px;
+}
+.mv_5 {
+	margin: 5px 0;
+}
+.mv_10 {
+	margin: 10px 0;
+}
+.mv_15 {
+	margin: 15px 0;
+}
+.mv_20 {
+	margin: 20px 0;
+}
+.mh_15 {
+	margin: 0 15px;
+}
+.fs_12 {
+	font-size: 12px;
+}
+.fs_16 {
+	font-size: 16px;
+}
+.fc_suc {
+	color: #52c41a;
+}
+.fc_info {
+	color: #1890ff;
+}
+.fc_err {
+	color: #f5222d;
+}
+.lh_n {
+	line-height: normal;
+}
+.dis_ib {
+	display: inline-block;
+}
+.dis_b {
+	display: block;
+}
+
+.fw_b {
+	font-weight: bold;
+}
+
+.b1 {
+	border: 1px solid #e0e0e0 !important;
+}
+.bb1 {
+	border-bottom: 1px solid #e0e0e0 !important;
+}
+
+.ov_h {
+	overflow: hidden;
+}
+
+.bg_white {
+	background-color: #fff;
+}
+
+/*浮层滚动条*/
+.scroll {
+	padding-right: 20px;
+}
+.scroll::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+/*正常情况下滑块的样式*/
+.scroll::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.05);
+	/*border-radius: 10px;*/
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+/*鼠标悬浮在该类指向的控件上时滑块的样式*/
+.scroll:hover::-webkit-scrollbar-thumb {
+	background-color: rgba(0, 0, 0, 0.2);
+	/*border-radius: 10px;*/
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+/*鼠标悬浮在滑块上时滑块的样式*/
+.scroll::-webkit-scrollbar-thumb:hover {
+	background-color: rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, 0.1);
+}
+/*正常时候的主干部分*/
+.scroll::-webkit-scrollbar-track {
+	/*border-radius: 10px;*/
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+	background-color: #eee;
+}
+/*鼠标悬浮在滚动条上的主干部分*/
+.scroll::-webkit-scrollbar-track:hover {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.01);
+}
+
+/*主框架吊顶栏样式自定义*/
+.ant-layout-header {
+	height: 56px;
+	line-height: 56px;
+	overflow: hidden;
+}
+
+/*主框架菜单栏样式自定义*/
+a:hover,
+.mainTitleBar_back:hover,
+.ant-layout-header .anticon:hover {
+	color: #17adf6 !important;
+}
+
+header .ant-menu-dark,
+header .ant-menu-dark .ant-menu-sub,
+header .box {
+	background: #43546a !important;
+}
+
+.ant-menu-dark,
+.ant-layout-sider,
+.ant-menu-item-selected,
+.ant-menu-dark .ant-menu-sub {
+	background: #324158 !important;
+}
+
+.ant-menu-submenu.ant-menu-submenu-popup.ant-menu-submenu-placement-rightTop
+	ul.ant-menu.ant-menu-sub,
+.ant-menu-submenu.ant-menu-submenu-selected,
+.ant-menu-submenu:hover {
+	background: #1e2c3c !important;
+}
+
+.ant-layout-sider .ant-menu-submenu,
+.ant-layout-sider .ant-menu-submenu {
+	margin-bottom: 10px;
+}
+
+.ant-layout-sider .ant-menu-submenu .ant-menu-submenu-title,
+.ant-layout-sider .ant-menu-submenu .ant-menu-submenu-title a,
+.ant-layout-sider .ant-menu-submenu .ant-menu-submenu-title i.anticon {
+	height: 46px !important;
+	line-height: 46px !important;
+	vertical-align: middle;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+.ant-menu-submenu .ant-menu-submenu-title a {
+	display: block;
+	color: #fff;
+}
+
+.ant-menu-submenu.ant-menu-submenu-popup.ant-menu-submenu-placement-rightTop
+	ul.ant-menu.ant-menu-sub {
+	/*border-radius: 0;*/
+}
+
+.ant-menu-inline-collapsed .ant-menu-submenu-title i.anticon {
+	margin: 0 !important;
+}
+.ant-menu-submenu.ant-menu-submenu-vertical .ant-menu-submenu-title i.anticon {
+	margin: 0 25px;
+}
+
+/*顶部进度条*/
+.ant-progress-line {
+	position: fixed;
+	top: -13px;
+	left: 0;
+	z-index: 9999999;
+}
+.ant-progress-inner {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+/*table 列表样式*/
+.react-resizable {
+	position: relative;
+	background-clip: padding-box;
+}
+
+.react-resizable-handle {
+	position: absolute;
+	width: 10px;
+	height: 100%;
+	bottom: 0;
+	right: -5px;
+	cursor: col-resize;
+	z-index: 1;
+}
+
+.ant-table-thead > tr > th .ant-table-header-column {
+	width: -webkit-fill-available;
+	cursor: w-resize;
+}
+
+.ant-table-small > .ant-table-content > .ant-table-body {
+	margin: 0;
+}
+
+.ant-table-body {
+	overflow-x: auto !important;
+}
+
+/*分页样式自定义*/
+.ant-pagination-simple .ant-pagination-simple-pager {
+	width: 50px;
+	overflow: hidden;
+}
+.ant-pagination-simple .ant-pagination-simple-pager input {
+	border: none;
+}
+.ant-table-pagination.ant-pagination {
+	float: left;
+}
+
+/*顶部浮窗*/
+.ant-drawer-top .ant-drawer-content-wrapper {
+	height: auto !important;
+	max-height: 100%;
+	overflow-y: hidden;
+}
+.ant-drawer.ant-drawer-top .ant-drawer-wrapper-body {
+	overflow-y: hidden !important;
+}
+.ant-drawer.ant-drawer-top .ant-drawer-body {
+	height: 100%;
+	overflow-y: auto;
+}
+
+/*右侧浮窗*/
+.ant-drawer.ant-drawer-right .ant-drawer-header {
+	height: 56px;
+}
+.ant-drawer.ant-drawer-right .ant-drawer-wrapper-body {
+	overflow-y: hidden !important;
+}
+.ant-drawer.ant-drawer-right .ant-drawer-body {
+	height: 100%;
+	padding: 0 !important;
+	overflow-y: auto;
+}
+
+.ant-drawer.ant-drawer-right .ant-drawer-content-wrapper {
+	right: -1px;
+}
+
+.ant-drawer.ant-drawer-right {
+	transform: translateX(0px) !important;
+}
+.ant-drawer.ant-drawer-open.ant-drawer-top {
+	transform: translateY(0px) !important;
+}
+.ant-drawer.ant-drawer-right .drawer_bottombutton {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #e8e8e8;
+	padding: 10px 16px;
+	text-align: left;
+	left: 0;
+	background: #fff;
+	border-radius: 0 0 4px 4px;
+}
+.ant-drawer.ant-drawer-right .ant-drawer-title {
+	margin-left: 55px;
+}
+.ant-drawer.ant-drawer-right .ant-drawer-close {
+	right: none;
+	left: 0;
+	border-right: 1px solid #e8e8e8;
+	cursor: pointer;
+}
+.ant-drawer.ant-drawer-right .ant-drawer-close:hover {
+	background: #1890ff;
+	color: #fff;
+}
+.ant-drawer.ant-drawer-right .drawer_bottombutton button {
+	margin-right: 8px;
+}
+
+/*自定义表格样式*/
+.ant-table-small .ant-table-column-title {
+	font-weight: bold;
+	font-size: 12px;
+}
+
+/*自定义上传图片展示样式*/
+.ant-upload-list-picture-card .ant-upload-list-item,
+.ant-upload.ant-upload-select-picture-card {
+	margin-bottom: 0px;
+}
+.ant-upload-list-picture-card .ant-upload-list-item-info {
+	background-color: #666;
+}
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail,
+.ant-upload-list-picture-card .ant-upload-list-item-thumbnail img {
+	position: absolute;
+	height: auto;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/*表单单元展示内容样式*/
+.ant-form-item {
+	margin-bottom: 10px;
+}
+
+/*内容描述布局样式*/
+.ant-descriptions.small .ant-descriptions-title {
+	font-size: 12px;
+	margin-bottom: 10px;
+	color: #1890ff;
+}
+
+/*按钮样式*/
+.ant-btn-danger,
+.ant-btn-danger:focus {
+	color: #fff;
+	background-color: #ff4d4f;
+	border-color: #ff4d4f;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+	-webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}
+.ant-btn-danger:hover {
+	background-color: #f77f80;
+	border-color: #f77f80;
+}
+
+/*自定义样式*/
+/*表单输入框*/
+.Custom_CreateForm_Inputs .ant-input-affix-wrapper {
+	width: auto;
+}
+/*ck编辑器*/
+.ck.ck-content.ck-editor__editable_inline {
+	min-height: 300px;
+	max-height: 500px;
+}
+/*可编辑节点*/
+.contentEditable {
+	min-height: 200px;
+	max-height: 400px;
+	overflow-y: auto;
+	border: 1px solid #d9d9d9;
+	padding: 0 10px;
+	border-radius: 4px;
+}
+.contentEditable:empty:before {
+	content: attr(placeholder);
+	color: #bbb;
+}
+.contentEditable:focus {
+	content: none;
+}
+
+/*插件样式*/
+.PLUGINS_pickerMap .ant-modal-body {
+	padding: 0;
+}
+
+.last-row-brb-none .ant-table-row[data-row-key="10"] td {
+	border-bottom: none;
+}

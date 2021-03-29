@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_30010fc208362023d2cc04b72a26912639ccacd7(Module, $0, $1, $2) { $1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);Module.STDWEB_PRIVATE.from_js($0, (function(){let data=[];return($1).map((v,i)=>{data[v]=($2)[i]});})()); }

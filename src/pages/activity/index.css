@@ -1,0 +1,60 @@
+.tip {
+    margin: 24px 0 24px;
+}
+
+.count {
+    background-color: #fff;
+    padding: 0 33px;
+}
+
+.createList {
+    display: grid;
+    margin: 30px 0 56px;
+    grid-template-columns: repeat(auto-fill, 214px);
+    justify-content: space-between;
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+}
+
+.createList>div {
+    height: 301px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px 2px rgba(236, 235, 235, 0.5);
+    border-radius: 3px;
+}
+
+.createList>div .cLi_img {
+    width: 214px;
+    height: 221px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cLi_img img {
+    position: absolute;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.createList>div>div:nth-child(2) {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666666;
+    line-height: 20px;
+    margin: 7px 0 8px 12px;
+}
+
+.createList>div>button {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 32px;
+    background: #3FADFF;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+    border: 0;
+}

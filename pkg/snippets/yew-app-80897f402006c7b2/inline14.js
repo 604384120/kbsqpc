@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_a38176b50ebca70f23433ef242187944ac44ad67(Module, $0, $1, $2, $3) { $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);$3 = Module.STDWEB_PRIVATE.to_js($3);let children=($0);($1).open(($2),"",()=>{children&&document.getElementById(($3)).appendChild(children);}); }

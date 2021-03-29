@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_9450a649ee8ed743a1a20c61ea74830d01f8f0b3(Module, $0, $1, $2) { $0 = Module.STDWEB_PRIVATE.to_js($0);$1 = Module.STDWEB_PRIVATE.to_js($1);$2 = Module.STDWEB_PRIVATE.to_js($2);let{React,ReactDOM,Modals}=Yew;let element=React.createElement(Modals,{ref:r=>r&&($0)(r),},React.createElement("div",{id:($1)}));ReactDOM.render(element,($2)); }

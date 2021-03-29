@@ -1,0 +1,1 @@
+export function __cargo_web_snippet_8f9915d5adc9e6159b9c4924829fcf752695bd4d(Module, $0) { Module.STDWEB_PRIVATE.from_js($0, (function(){return window["localStorage"];})()); }
